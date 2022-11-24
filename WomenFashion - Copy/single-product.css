@@ -1,0 +1,81 @@
+/**************** Single Product ******************/
+
+#product-details {
+    margin-top: 20px;
+    display: flex;
+}
+
+.product-images-box {
+    display: flex;
+    width: 60%;
+}
+
+#product-details .single-product-image {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.img-group {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 10%;
+    cursor: pointer;
+}
+
+.img-group .img-col {
+    padding-bottom: 20px;
+}
+
+#product-details .single-product-details {
+    padding-top: 30px;
+    width: 30%;
+}
+
+#product-details .single-product-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#product-details .single-product-details h2 {
+    font-size: 26px;
+}
+
+#product-details .single-product-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#product-details .single-product-details select .select-size {
+    color: #3C3C3C;
+}
+
+#product-details .single-product-details input {
+    height: 40px;
+    width: 50px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#product-details .single-product-details input:focus {
+    outline: none;
+}
+
+#product-details .single-product-details button {
+    background-color: #C10001;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-details .single-product-details span {
+    line-height: 25px;
+}
+
+#product-details .single-product-details span ul {
+    list-style: none;
+}
