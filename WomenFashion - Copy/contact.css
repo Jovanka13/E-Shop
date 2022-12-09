@@ -31,21 +31,18 @@
     justify-content: center;
 }
 
-#contact .contact-details h2 {
-    padding-bottom: 50px;
-}
-
 #contact .contact-details .map {
-    display: block;
-    width: 600px;
-    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin: 50px 0;
 }
 
 #contact .contact-details .row {
     display: flex;
+    justify-content: center;
     text-align: center;
-    padding-top: 50px;
 }
 
 #contact .contact-details .row .contact-col {
@@ -53,6 +50,10 @@
     display: flex;
     flex-direction: column;
     line-height: 1.5;
+}
+
+#contact .contact-details .row .contact-col:nth-child(3) {
+    padding-right: 0;
 }
 
 #contact .contact-details .row .contact-col h4 {

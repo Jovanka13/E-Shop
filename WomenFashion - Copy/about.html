@@ -19,14 +19,19 @@
 <body>
 
     <section id="header">
-        <div>
+        <div class="menu">
             <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="shop-bag"><button><i class="bi bi-cart-fill"></i></button></li>
+                <li id="shop-bag">
+                    <button>
+                        <i class="bi bi-cart-fill bag"></i>
+                        <div class="cart-counter">0</div>
+                    </button>
+                </li>
                 <a href="#" id="close"><i class="bi bi-x"></i></a>
                 <div class="cart-container">
                     <h4>Your Cart</h4>
@@ -41,8 +46,8 @@
             </ul>
         </div>
         <div id="mobile-menu">
-            <a href="cart.html"><i class="bi bi-cart-fill"></i></a>
             <i id="bar" class="bi bi-list"></i>
+            <a href="#"><i class="bi bi-cart-fill"></i></a>
         </div>
         <!--<div>Logo created by <a href="https://www.designevo.com/" title="Free Online Logo Maker">DesignEvo logo maker</a></div>-->
         <a href="#"><img src="images/index-imgs/logo.png" alt="" class="logo"></a>
@@ -53,7 +58,7 @@
         <p>Welcome in!</p>
     </section>
 
-    <section id="abour-header" class="section-p1">
+    <section id="abour-header" class="section-p1 section-m1 reveal">
         <div class="about-images">
             <img src="images/about-imgs/about-img.jpg" alt="" class="about-main-img">
             <img src="images/about-imgs/aboutus.jpg" alt="" class="about-second-img">
@@ -67,7 +72,7 @@
         </div>
     </section>
 
-    <section id="feature" class="section-p1">
+    <section id="feature" class="section-p1 reveal">
         <div class="f-box">
             <img src="images/index-imgs/24-7.svg" alt="">
             <h6>24/7 Support</h6>
@@ -90,10 +95,20 @@
         </div>
     </section>
 
-    <section id="banner" class="section-m1">
+    <section id="banner" class="section-m1 reveal">
         <h2>Sign up for our newsletter and get a 10% discount</h2>
-        <button class="btn-sub">Subscribe to the newsletter</button>
+        <button class="btn-sub" id="trigger">Subscribe to the newsletter</button>
     </section>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <form>
+                <p>Subscribe to our mailing list</p>
+                <input type="email" value="" name="email" placeholder="Email address" required>
+                <input type="submit" value="Subscribe" name="subscribe">
+            </form>
+        </div>
+    </div>
 
     <footer class="section-p1">
         <div class="col">

@@ -75,17 +75,38 @@ p {
 }
 
 #nav-menu #shop-bag button {
-text-decoration: none;
-padding: 10px 12px;
-border: none;
-border-radius: 30px;
-cursor: pointer;
+    text-decoration: none;
+    padding: 10px 12px;
+    border: none; 
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
 }
 
 #nav-menu #shop-bag button:hover {
-    background-color: #C10001;
+    background-color: #DFDFDF;
     transition: 0.4s;
 }
+
+#shop-bag button .bag {
+    font-size: 20px;
+}
+
+.cart-counter {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    background-color: #C10001;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    text-align: center;
+    padding: 0 5px;
+    color: #fff;
+}
+
 /* -------------- HEADER ---------------- */
 
 #header {
@@ -200,15 +221,16 @@ cursor: pointer;
 
 #feature {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 #feature .f-box {
     width: 200px;
-    height: 250px;
     padding: 20px 10px;
-    margin: 50px;
+    margin: 30px;
     text-align: center;
     line-height: 18px;
     border-radius: 10px;
@@ -219,8 +241,9 @@ cursor: pointer;
 }
 
 #feature .f-box img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100%;
+    max-height: 100px;
 }
 
 #feature .f-box:hover {
@@ -259,21 +282,27 @@ cursor: pointer;
     flex-direction: column;
     text-align: center;
     font-size: 18px;
-    background: #fff;
-    padding: 10px 12px;
-    border: 1px solid hsl(15, 18%, 40%);
-    border-radius: 20px;
-    width: 23%;
     min-width: 250px;
     margin: 15px 0;
+    border: 1px solid #785D54;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #products .swiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
-    
     border-radius: 15px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#products .swiper .swiper-slide:hover img {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 #products .swiper-slide .item-description {
@@ -287,12 +316,19 @@ cursor: pointer;
     position: relative;
 }
 
-#products .price-buy a .cart {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+.icon-wrap .cart {
+    display: inline-block;
+    transition: background-color 0.25s;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #b8a9a4;
+} 
+
+.icon-wrap .cart:hover {
+    background-color: #C10001;
+    cursor: pointer;
 }
 
 #products .btn a {
@@ -374,6 +410,7 @@ cursor: pointer;
     text-align: center;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #cta-banner .container {
@@ -487,6 +524,100 @@ footer .copyright {
     padding-top: 20px;
 }
 
+/* ---------- Modal -------- */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 9999;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 50px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.close-button {
+    float: right;
+    width: 30px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content form {
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-content form p {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.modal-content form input[type="email"] {
+    padding: 10px 15px;
+    width: 60%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+}
+  
+  ::placeholder {
+    color: #d1d1d1;
+}
+  
+  input[type="submit"] {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #C10001, #785D54);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+/* Animation */
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
 
 
 

@@ -1,29 +1,126 @@
 /* -------------- MEDIA QUERY --------------- */
+@media(max-width: 1330px) {
+
+    #banner h2 {
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+
+    #banner .btn-sub {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media(max-width: 1200px) {
+
+    #cta-banner .container {
+        max-width: 600px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #brands .brands-logo img {
+        max-width: 70px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    #cta-banner .container .img-banner img {
+        display: none;
+    }
+}
+
+@media(max-width: 1060px) {
+
+    #feature .f-box {
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #feature .f-box img {
+        width: 50px;
+        height: 100%;
+        max-height: 50px;
+    }
+}
+
+@media(max-width: 975px) {
+
+    #hero h4 {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    #hero p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    #banner {
+        padding: 50px;
+    }
+
+    #banner h2 {
+        padding-bottom: 10px;
+        font-size: 26px;
+    }
+
+    #abour-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #abour-header .about-images {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #abour-header .about-text {
+        width: 100%;
+        margin-top: 100px;
+    } 
+
+    .about-images .about-main-img {
+        border: 5px solid #C10001;
+    }
+
+    #blog .blog-box:nth-child(5) {
+        padding-bottom: 0;
+    }
+}
 
 @media(max-width: 799px) {
 
-    .section-p1 {
-        padding: 50px 30px;
+    #hero {
+        padding: 100px;
+        height: 100vh;
+    }
+
+    .btn {
+        font-size: 14px;
+        font-weight: 800px;
+        margin: 10px 0;
+        padding: 5px 20px;
     }
 
     h2 {
         font-size: 30px;
     }
 
-    #nav-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        background-color: #DFDFDF;
-        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
-        top: 0;
-        left: -500px;
-        height: 100vh;
-        width: 350px;
-        padding: 100px 0 0 20px;
-        transition: 0.3s;
+    #header .menu {
+        display: none;
     }
 
     #nav-menu.show {
@@ -58,15 +155,8 @@
         display: none;
     }
 
-    #hero {
-        padding: 0 70px;
-        background-position: top 60% right 80%;
-        height: 70vh;
-    }
-
     #feature .f-box {
         width: 300px;
-        height: 250px;
         padding: 20px 10px;
         margin: 10px;
     }
@@ -78,7 +168,7 @@
 
     #banner {
         padding: 0 30px;
-        height: 30vh;
+    
     }
 
     #banner h2 {
@@ -132,10 +222,6 @@
         width: 60%;
     }
 
-    #blog {
-        padding: 80px 80px 0 80px;
-    }
-
     #blog .blog-image {
         margin-right: 10px;
         margin-left: 10px;
@@ -151,7 +237,7 @@
         flex-direction: column;
         height: auto;
         margin-bottom: 0;
-        padding: 100px 100px 0 100px;
+        padding: 50px
     }
 
     #abour-header .about-images {
@@ -160,24 +246,105 @@
 
     #abour-header .about-text {
         width: 100%;
-        padding: 100px 0 0 0;
-    }
-
-    #contact .contact-details .map {
-        display: block;
-        width: 400px;
-        height: 250px;
-        text-align: center;
+        padding: 0;
     }
 
     #contact .contact-details .row {
         display: flex;
         flex-direction: column;
-        padding-top: 250px;
     }
 
-    #contact .contact-details .row .contact-col h4 {
-        padding-top: 50px;
+    #contact .contact-details .row .contact-col {
+        padding: 0 0 30px 0;
+    }
+
+    #form-details .form {
+        padding: 0px 50px;
+    }
+}
+
+@media(max-width: 790px) {
+    #banner h2 {
+        font-size: 22px;
+    }
+
+    #banner .btn-sub {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #feature .f-box {
+        width: 250px;
+        padding: 20px 10px;
+        margin: 25px;
+    }
+
+    #brands .brands-logo img {
+        max-width: 60px;
+        height: 60px;
+        margin: 20px;
+    }
+}
+
+@media(max-width: 630px) {
+
+    #hero {
+        padding: 50px;
+    }
+
+    #hero h4 {
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+
+    #hero h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    #hero p {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+
+    #brands .brands-logo img {
+        max-width: 40px;
+        height: 40px;
+        margin: 15px;
+    }
+
+    #banner h2 {
+        font-size: 16px;
+    }
+
+    #banner .btn-sub {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    #blog .blog-box {
+        flex-direction: column;
+        display: flex;
+        padding-bottom: 40px;
+    }
+
+    #blog .blog-image {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #blog .blog-text {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .modal-content {
+        padding: 20px;
+        width: 400px;
     }
 }
 
@@ -226,28 +393,13 @@
     }
 
     #banner h2 {
-        font-size: 20px;
-        line-height: 33px;
-        padding-bottom: 25px;
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 20px;
     }
 
     #cta-banner .container .img-banner img {
         display: none;
-    }
-
-    /* Single Product */
-    #product-details {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .product-images-box {
-        display: flex;
-        width: 100%;
-    }
-
-    #product-details .single-product-details {
-        width: 100%;
     }
 
     #blog {
@@ -298,30 +450,30 @@
         padding-top: 50px;
     }
 
-    #contact .contact-details .map {
-        display: block;
-        width: 300px;
-        height: 150px;
-        text-align: center;
+    .modal-content {
+        padding: 10px;
+        width: 360px;
+    }
+}
+
+@media(max-width: 375px) {
+
+    #hero {
+        margin-bottom: 50px;
     }
 
-    #form-details .form {
-        padding: 50px 50px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    #hero h1 {
+        font-size: 20px;
+        line-height: 20px;
     }
 
-    #add-cart {
-        flex-direction: column;
+    #feature {
+        padding: 0;
     }
 
-    #coupon {
-        width: 100%;
-    }
-
-    #subtotal {
-        width: 100%;
-        padding: 20px;
+    #banner h2 {
+        font-size: 13px;
+        line-height: 18px;
+        padding-bottom: 12px;
     }
 }

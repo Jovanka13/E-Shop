@@ -51,6 +51,7 @@ close.addEventListener('click', () =>
 const cartIcon = document.querySelector('#shop-bag'); 
 const cart = document.querySelector('.cart-container');
 const closeCart = document.querySelector('#close-cart');  
+//const cartCounter = document.querySelector('.cart-counter');
 // Open Cart
 cartIcon.onclick = () => {
   cart.classList.add('active-cart');
@@ -82,12 +83,41 @@ function ready() {
     const input = quantityInputs[i];
     input.addEventListener('change', quantityChanged);
   }
-  //Add to Cart
+  /*Add to Cart
   const addCart = document.getElementsByClassName('cart');
   for (let i = 0; i < addCart.length; i++) {
     const button = addCart[i];
     //button.addEventListener('click', addCartClicked);
+  } */
+ 
+  //CART COUNTER
+  const addCart = document.getElementsByClassName('cart');
+  let cartShow = document.querySelector('.cart-counter');
+  for (let i = 0; i < addCart.length; i++) {
+    addCart[i].addEventListener('click', () => {
+
+      cartCount();
+    });
+  } 
+
+  function cartCount() {
+    let prdCount = localStorage.getItem('cartsCount');
+    prdCount = parseInt(prdCount);
+    if(prdCount) {
+      localStorage.setItem('cartsCount', prdCount + 1);
+      cartShow.textContent = prdCount + 1; 
+    } else {
+      localStorage.setItem('cartsCount', 1);
+      cartShow.textContent = prdCount - 1;
+    }
   }
+  function displayCart() {
+    let prdCount = localStorage.getItem('cartsCount');
+    if(prdCount) {
+      cartShow.textContent = prdCount + 1; 
+    }
+  }
+  displayCart();
   //Buy Button Work
   document.getElementsByClassName('btn-buy')[0].addEventListener('click', buyButtonClicked);
 }
@@ -171,6 +201,7 @@ function updateTotal() {
     let quantity = quantityElement.value;
     total = total + (price * quantity);
   }
+
     //If price contain some cents value
     total = Math.round(total * 100) / 100;
 
@@ -178,3 +209,43 @@ function updateTotal() {
   
 } 
 
+
+
+//Animation 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+/* ----------------- MODAL ----------------- */
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector("#trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);

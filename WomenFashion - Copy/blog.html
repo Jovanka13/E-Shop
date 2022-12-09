@@ -19,14 +19,19 @@
 <body>
 
     <section id="header">
-        <div>
+        <div class="menu">
             <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="shop-bag"><button><i class="bi bi-cart-fill"></i></button></li>
+                <li id="shop-bag">
+                    <button>
+                        <i class="bi bi-cart-fill bag"></i>
+                        <div class="cart-counter">0</div>
+                    </button>
+                </li>
                 <a href="#" id="close"><i class="bi bi-x"></i></a>
                 <div class="cart-container">
                     <h4>Your Cart</h4>
@@ -41,8 +46,8 @@
             </ul>
         </div>
         <div id="mobile-menu">
-            <a href="cart.html"><i class="bi bi-cart-fill"></i></a>
             <i id="bar" class="bi bi-list"></i>
+            <a href="#"><i class="bi bi-cart-fill"></i></a>
         </div>
         <!--<div>Logo created by <a href="https://www.designevo.com/" title="Free Online Logo Maker">DesignEvo logo maker</a></div>-->
         <a href="#"><img src="images/index-imgs/logo.png" alt="" class="logo"></a>
@@ -53,19 +58,19 @@
         <p>Read more about fashion</p>
     </section>
 
-    <section id="blog">
-        <div class="blog-box">
+    <section id="blog" class="section-p1">
+        <div class="blog-box reveal">
             <div class="blog-image">
                 <img src="images/blog-imgs/b1.jpg" alt="">
             </div>
-            <div class="blog-text">
+            <div class="blog-text reveal">
                 <h4>Outfit of the Day</h4>
                 <span>Published 11 munites ago</span>
                 <p>The purpose behind this trend is to share and inspire others with fashion ideas, or to show off one’s new clothes and shoes.</p>
                 <a href="#">CONTINUE READING</a>
             </div>
         </div>
-        <div class="blog-box">
+        <div class="blog-box reveal">
             <div class="blog-text">
                 <h4>What Your Wardrobe Says About You</h4>
                 <span>Published 11 munites ago</span>
@@ -76,7 +81,7 @@
                 <img src="images/blog-imgs/b2.jpg" alt="">
             </div>
         </div>
-        <div class="blog-box">
+        <div class="blog-box reveal">
             <div class="blog-image">
                 <img src="images/blog-imgs/b3.jpg" alt="">
             </div>
@@ -87,7 +92,7 @@
                 <a href="#">CONTINUE READING</a>
             </div>
         </div>
-        <div class="blog-box">
+        <div class="blog-box reveal">
             <div class="blog-text">
                 <h4>How Style Evolved: Why It’s More Important than Ever to Know the History of Your Clothes</h4>
                 <span>Published 11 munites ago</span>
@@ -98,7 +103,7 @@
                 <img src="images/blog-imgs/b4.jpg" alt="">
             </div>
         </div>
-        <div class="blog-box">
+        <div class="blog-box reveal">
             <div class="blog-image">
                 <img src="images/blog-imgs/b5.jpg" alt="">
             </div>
@@ -117,10 +122,20 @@
         <a href="#"><i class="bi bi-arrow-right"></i></a>
     </section>
 
-    <section id="banner" class="section-m1">
+    <section id="banner" class="section-m1 reveal">
         <h2>Sign up for our newsletter and get a 10% discount</h2>
-        <button class="btn-sub">Subscribe to the newsletter</button>
+        <button class="btn-sub" id="trigger">Subscribe to the newsletter</button>
     </section>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <form>
+                <p>Subscribe to our mailing list</p>
+                <input type="email" value="" name="email" placeholder="Email address" required>
+                <input type="submit" value="Subscribe" name="subscribe">
+            </form>
+        </div>
+    </div>
 
     <footer class="section-p1">
         <div class="col">
