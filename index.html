@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Fashion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body>
+
+    <section id="header">
+        <div class="menu">
+            <ul id="nav-menu">
+                <div class="menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="mobile-close-btn"><button onclick="toggleMobileNav()">X</button></li>
+                </div>
+                <i id="bar" class="bi bi-list"></i>
+                <li id="shop-bag">
+                    <button>
+                        <i class="bi bi-cart-fill bag"></i>
+                        <div class="cart-counter">0</div>
+                    </button>
+                </li>
+                <div class="cart-container">
+                    <h4>Your Cart</h4>
+                    <div class="cart-content"></div>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">€0</div>
+                    </div>
+                    <button type="button" class="btn-buy btn">Buy Now</button>
+                    <i class="bi bi-x" id="close-cart"></i>
+                </div>
+            </ul>
+        </div>
+        <!--<div>Logo created by <a href="https://www.designevo.com/" title="Free Online Logo Maker">DesignEvo logo maker</a></div>-->
+        <a href="#"><img src="images/index-imgs/logo.png" alt="" class="logo"></a>
+    </section>
+
+    <section id="hero">
+        <h4 class="corner-border">2022 Fashion Collection</h4>
+        <h1>SALE! - 20 % OFF</h2>
+        <p>Don't Miss Out The Latest Outwear Trends</p>
+        <button class="btn">Buy Now</button>
+    </section>
+    
+    <section id="feature" class="section-p1 reveal">
+        <div class="f-box">
+            <img loading="lazy" src="images/index-imgs/24-7.svg" alt="">
+            <h6>24/7 Support</h6>
+            <p>On order related queries.</p>
+        </div>
+        <div class="f-box">
+            <img loading="lazy" src="images/index-imgs/shipping.svg" alt="">
+            <h6>Express Shipping</h6>
+            <p>Fast and free shipping on orders above 120€.</p>
+        </div>
+        <div class="f-box">
+            <img loading="lazy" src="images/index-imgs/return.svg" alt="">
+            <h6>Return within 30 days</h6>
+            <p>Free returns within 30 days of receiving the order.</p>
+        </div>
+        <div class="f-box">
+            <img loading="lazy" src="images/index-imgs/payment.svg" alt="">
+            <h6>Secure payments</h6>
+            <p>Safe and secure money transfer through verified circuits.</p>
+        </div>
+    </section>
+
+    <section id="products" class="section-p1 reveal">
+        <h2>Latest Trends</h2>
+        <p>Always start with perfection</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-box">
+                    <img src="images/shop-imgs/pr1.jpg" alt="" class="product-img">
+                    <div class="item-description">
+                        <h6 class="product-title">White Shirt</h6>
+                        <div class="price-buy">
+                            <p class="product-price">230€</p>
+                            <button onclick="addCartClicked(event)" class="product-btn">
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 219.945 219.945" style="enable-background:new 0 0 219.945 219.945;" xml:space="preserve" class="cart">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M183.021,112.989c20.769-2.534,36.924-20.244,36.924-41.69c0-23.178-18.859-42.032-42.035-42.032     c-21.053,0-38.484,15.572-41.515,35.791L41.852,53.724l-6.904-40.28H0v15.217h22.116l3.969,23.173l-0.32-0.038L43.95,152.232     h0.383l2.214,9.049c-10.774,1.798-19.021,11.162-19.021,22.44c0,12.562,10.218,22.78,22.777,22.78     c12.559,0,22.777-10.218,22.777-22.78c0-2.653-0.479-5.189-1.316-7.558h69.512c-0.837,2.371-1.319,4.908-1.319,7.558     c0,12.562,10.218,22.78,22.78,22.78c12.557,0,22.775-10.218,22.775-22.78c0-12.559-10.218-22.775-22.775-22.775H62.126     l-2.13-8.714h114.012L183.021,112.989z M162.744,176.163c4.165,0,7.558,3.391,7.558,7.558c0,4.172-3.393,7.563-7.558,7.563     c-4.172,0-7.563-3.393-7.563-7.563C155.181,179.552,158.574,176.163,162.744,176.163z M177.911,44.487     c14.786,0,26.818,12.029,26.818,26.815s-12.032,26.815-26.818,26.815s-26.813-12.029-26.813-26.815     S163.125,44.487,177.911,44.487z M50.308,191.284c-4.169,0-7.56-3.393-7.56-7.563c0-4.169,3.391-7.558,7.56-7.558     s7.56,3.391,7.56,7.558C57.868,187.893,54.477,191.284,50.308,191.284z M161.89,137.012H56.661v0.003l-10.056-55.55     l-2.072-12.093l92.378,11.076c3.447,15.458,15.425,27.695,30.721,31.56L161.89,137.012z"/>
+                                                    <polygon points="170.302,89.007 185.519,89.007 185.519,79.334 195.197,79.334 195.197,64.117 185.519,64.117 185.519,54.439      170.302,54.439 170.302,64.117 160.627,64.117 160.627,79.334 170.302,79.334    "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                        </svg>
+                                    </div>  
+                            </button>
+                        </div>
+                    </div>
+                  </div> 
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                    <img src="images/shop-imgs/pr2.jpg" alt="" class="product-img">
+                    <div class="item-description">
+                        <h6 class="product-title">Blue Elegant Pants</h6>
+                        <div class="price-buy">
+                            <p class="product-price">320€</p>
+                            <button onclick="addCartClicked(event)" class="product-btn">
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 219.945 219.945" style="enable-background:new 0 0 219.945 219.945;" xml:space="preserve" class="cart">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M183.021,112.989c20.769-2.534,36.924-20.244,36.924-41.69c0-23.178-18.859-42.032-42.035-42.032     c-21.053,0-38.484,15.572-41.515,35.791L41.852,53.724l-6.904-40.28H0v15.217h22.116l3.969,23.173l-0.32-0.038L43.95,152.232     h0.383l2.214,9.049c-10.774,1.798-19.021,11.162-19.021,22.44c0,12.562,10.218,22.78,22.777,22.78     c12.559,0,22.777-10.218,22.777-22.78c0-2.653-0.479-5.189-1.316-7.558h69.512c-0.837,2.371-1.319,4.908-1.319,7.558     c0,12.562,10.218,22.78,22.78,22.78c12.557,0,22.775-10.218,22.775-22.78c0-12.559-10.218-22.775-22.775-22.775H62.126     l-2.13-8.714h114.012L183.021,112.989z M162.744,176.163c4.165,0,7.558,3.391,7.558,7.558c0,4.172-3.393,7.563-7.558,7.563     c-4.172,0-7.563-3.393-7.563-7.563C155.181,179.552,158.574,176.163,162.744,176.163z M177.911,44.487     c14.786,0,26.818,12.029,26.818,26.815s-12.032,26.815-26.818,26.815s-26.813-12.029-26.813-26.815     S163.125,44.487,177.911,44.487z M50.308,191.284c-4.169,0-7.56-3.393-7.56-7.563c0-4.169,3.391-7.558,7.56-7.558     s7.56,3.391,7.56,7.558C57.868,187.893,54.477,191.284,50.308,191.284z M161.89,137.012H56.661v0.003l-10.056-55.55     l-2.072-12.093l92.378,11.076c3.447,15.458,15.425,27.695,30.721,31.56L161.89,137.012z"/>
+                                                    <polygon points="170.302,89.007 185.519,89.007 185.519,79.334 195.197,79.334 195.197,64.117 185.519,64.117 185.519,54.439      170.302,54.439 170.302,64.117 160.627,64.117 160.627,79.334 170.302,79.334    "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                        </svg>
+                                    </div>  
+                            </button>
+                        </div>
+                    </div>
+                  </div> 
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                    <img src="images/shop-imgs/pr3.jpg" alt="" class="product-img">
+                    <div class="item-description">
+                        <h6 class="product-title">Winter Jacket</h6>
+                        <div class="price-buy">
+                            <p class="product-price">580€</p>
+                            <button onclick="addCartClicked(event)" class="product-btn">
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 219.945 219.945" style="enable-background:new 0 0 219.945 219.945;" xml:space="preserve" class="cart">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M183.021,112.989c20.769-2.534,36.924-20.244,36.924-41.69c0-23.178-18.859-42.032-42.035-42.032     c-21.053,0-38.484,15.572-41.515,35.791L41.852,53.724l-6.904-40.28H0v15.217h22.116l3.969,23.173l-0.32-0.038L43.95,152.232     h0.383l2.214,9.049c-10.774,1.798-19.021,11.162-19.021,22.44c0,12.562,10.218,22.78,22.777,22.78     c12.559,0,22.777-10.218,22.777-22.78c0-2.653-0.479-5.189-1.316-7.558h69.512c-0.837,2.371-1.319,4.908-1.319,7.558     c0,12.562,10.218,22.78,22.78,22.78c12.557,0,22.775-10.218,22.775-22.78c0-12.559-10.218-22.775-22.775-22.775H62.126     l-2.13-8.714h114.012L183.021,112.989z M162.744,176.163c4.165,0,7.558,3.391,7.558,7.558c0,4.172-3.393,7.563-7.558,7.563     c-4.172,0-7.563-3.393-7.563-7.563C155.181,179.552,158.574,176.163,162.744,176.163z M177.911,44.487     c14.786,0,26.818,12.029,26.818,26.815s-12.032,26.815-26.818,26.815s-26.813-12.029-26.813-26.815     S163.125,44.487,177.911,44.487z M50.308,191.284c-4.169,0-7.56-3.393-7.56-7.563c0-4.169,3.391-7.558,7.56-7.558     s7.56,3.391,7.56,7.558C57.868,187.893,54.477,191.284,50.308,191.284z M161.89,137.012H56.661v0.003l-10.056-55.55     l-2.072-12.093l92.378,11.076c3.447,15.458,15.425,27.695,30.721,31.56L161.89,137.012z"/>
+                                                    <polygon points="170.302,89.007 185.519,89.007 185.519,79.334 195.197,79.334 195.197,64.117 185.519,64.117 185.519,54.439      170.302,54.439 170.302,64.117 160.627,64.117 160.627,79.334 170.302,79.334    "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                        </svg>
+                                    </div>  
+                            </button>
+                        </div>
+                    </div>
+                  </div> 
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                    <img src="images/shop-imgs/pr4.jpg" alt="" class="product-img">
+                    <div class="item-description">
+                        <h6 class="product-title">Black Dress</h6>
+                        <div class="price-buy">
+                            <p class="product-price">370€</p>
+                            <button onclick="addCartClicked(event)" class="product-btn">
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 219.945 219.945" style="enable-background:new 0 0 219.945 219.945;" xml:space="preserve" class="cart">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M183.021,112.989c20.769-2.534,36.924-20.244,36.924-41.69c0-23.178-18.859-42.032-42.035-42.032     c-21.053,0-38.484,15.572-41.515,35.791L41.852,53.724l-6.904-40.28H0v15.217h22.116l3.969,23.173l-0.32-0.038L43.95,152.232     h0.383l2.214,9.049c-10.774,1.798-19.021,11.162-19.021,22.44c0,12.562,10.218,22.78,22.777,22.78     c12.559,0,22.777-10.218,22.777-22.78c0-2.653-0.479-5.189-1.316-7.558h69.512c-0.837,2.371-1.319,4.908-1.319,7.558     c0,12.562,10.218,22.78,22.78,22.78c12.557,0,22.775-10.218,22.775-22.78c0-12.559-10.218-22.775-22.775-22.775H62.126     l-2.13-8.714h114.012L183.021,112.989z M162.744,176.163c4.165,0,7.558,3.391,7.558,7.558c0,4.172-3.393,7.563-7.558,7.563     c-4.172,0-7.563-3.393-7.563-7.563C155.181,179.552,158.574,176.163,162.744,176.163z M177.911,44.487     c14.786,0,26.818,12.029,26.818,26.815s-12.032,26.815-26.818,26.815s-26.813-12.029-26.813-26.815     S163.125,44.487,177.911,44.487z M50.308,191.284c-4.169,0-7.56-3.393-7.56-7.563c0-4.169,3.391-7.558,7.56-7.558     s7.56,3.391,7.56,7.558C57.868,187.893,54.477,191.284,50.308,191.284z M161.89,137.012H56.661v0.003l-10.056-55.55     l-2.072-12.093l92.378,11.076c3.447,15.458,15.425,27.695,30.721,31.56L161.89,137.012z"/>
+                                                    <polygon points="170.302,89.007 185.519,89.007 185.519,79.334 195.197,79.334 195.197,64.117 185.519,64.117 185.519,54.439      170.302,54.439 170.302,64.117 160.627,64.117 160.627,79.334 170.302,79.334    "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                        </svg>
+                                    </div>  
+                            </button>
+                        </div>
+                    </div>
+                  </div> 
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                    <img src="images/shop-imgs/pr5.jpg" alt="" class="product-img">
+                    <div class="item-description">
+                        <h6 class="product-title">Long Skirt</h6>
+                        <div class="price-buy">
+                            <p class="product-price">170€</p>
+                            <button onclick="addCartClicked(event)" class="product-btn">
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 219.945 219.945" style="enable-background:new 0 0 219.945 219.945;" xml:space="preserve" class="cart">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M183.021,112.989c20.769-2.534,36.924-20.244,36.924-41.69c0-23.178-18.859-42.032-42.035-42.032     c-21.053,0-38.484,15.572-41.515,35.791L41.852,53.724l-6.904-40.28H0v15.217h22.116l3.969,23.173l-0.32-0.038L43.95,152.232     h0.383l2.214,9.049c-10.774,1.798-19.021,11.162-19.021,22.44c0,12.562,10.218,22.78,22.777,22.78     c12.559,0,22.777-10.218,22.777-22.78c0-2.653-0.479-5.189-1.316-7.558h69.512c-0.837,2.371-1.319,4.908-1.319,7.558     c0,12.562,10.218,22.78,22.78,22.78c12.557,0,22.775-10.218,22.775-22.78c0-12.559-10.218-22.775-22.775-22.775H62.126     l-2.13-8.714h114.012L183.021,112.989z M162.744,176.163c4.165,0,7.558,3.391,7.558,7.558c0,4.172-3.393,7.563-7.558,7.563     c-4.172,0-7.563-3.393-7.563-7.563C155.181,179.552,158.574,176.163,162.744,176.163z M177.911,44.487     c14.786,0,26.818,12.029,26.818,26.815s-12.032,26.815-26.818,26.815s-26.813-12.029-26.813-26.815     S163.125,44.487,177.911,44.487z M50.308,191.284c-4.169,0-7.56-3.393-7.56-7.563c0-4.169,3.391-7.558,7.56-7.558     s7.56,3.391,7.56,7.558C57.868,187.893,54.477,191.284,50.308,191.284z M161.89,137.012H56.661v0.003l-10.056-55.55     l-2.072-12.093l92.378,11.076c3.447,15.458,15.425,27.695,30.721,31.56L161.89,137.012z"/>
+                                                    <polygon points="170.302,89.007 185.519,89.007 185.519,79.334 195.197,79.334 195.197,64.117 185.519,64.117 185.519,54.439      170.302,54.439 170.302,64.117 160.627,64.117 160.627,79.334 170.302,79.334    "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                        </svg>
+                                    </div>  
+                            </button>
+                        </div>
+                    </div>
+                  </div> 
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                    <img src="images/shop-imgs/pr6.jpg" alt="" class="product-img">
+                    <div class="item-description">
+                        <h6 class="product-title">Orange Set</h6>
+                        <div class="price-buy">
+                            <p class="product-price">420€</p>
+                            <button onclick="addCartClicked(event)" class="product-btn">
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 219.945 219.945" style="enable-background:new 0 0 219.945 219.945;" xml:space="preserve" class="cart">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M183.021,112.989c20.769-2.534,36.924-20.244,36.924-41.69c0-23.178-18.859-42.032-42.035-42.032     c-21.053,0-38.484,15.572-41.515,35.791L41.852,53.724l-6.904-40.28H0v15.217h22.116l3.969,23.173l-0.32-0.038L43.95,152.232     h0.383l2.214,9.049c-10.774,1.798-19.021,11.162-19.021,22.44c0,12.562,10.218,22.78,22.777,22.78     c12.559,0,22.777-10.218,22.777-22.78c0-2.653-0.479-5.189-1.316-7.558h69.512c-0.837,2.371-1.319,4.908-1.319,7.558     c0,12.562,10.218,22.78,22.78,22.78c12.557,0,22.775-10.218,22.775-22.78c0-12.559-10.218-22.775-22.775-22.775H62.126     l-2.13-8.714h114.012L183.021,112.989z M162.744,176.163c4.165,0,7.558,3.391,7.558,7.558c0,4.172-3.393,7.563-7.558,7.563     c-4.172,0-7.563-3.393-7.563-7.563C155.181,179.552,158.574,176.163,162.744,176.163z M177.911,44.487     c14.786,0,26.818,12.029,26.818,26.815s-12.032,26.815-26.818,26.815s-26.813-12.029-26.813-26.815     S163.125,44.487,177.911,44.487z M50.308,191.284c-4.169,0-7.56-3.393-7.56-7.563c0-4.169,3.391-7.558,7.56-7.558     s7.56,3.391,7.56,7.558C57.868,187.893,54.477,191.284,50.308,191.284z M161.89,137.012H56.661v0.003l-10.056-55.55     l-2.072-12.093l92.378,11.076c3.447,15.458,15.425,27.695,30.721,31.56L161.89,137.012z"/>
+                                                    <polygon points="170.302,89.007 185.519,89.007 185.519,79.334 195.197,79.334 195.197,64.117 185.519,64.117 185.519,54.439      170.302,54.439 170.302,64.117 160.627,64.117 160.627,79.334 170.302,79.334    "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                        </svg>
+                                    </div>  
+                            </button>
+                        </div>
+                    </div>
+                  </div> 
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                    <img src="images/shop-imgs/pr7.jpg" alt="" class="product-img">
+                    <div class="item-description">
+                        <h6 class="product-title">Long Winter Jacket</h6>
+                        <div class="price-buy">
+                            <p class="product-price">590€</p>
+                            <button onclick="addCartClicked(event)" class="product-btn">
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 219.945 219.945" style="enable-background:new 0 0 219.945 219.945;" xml:space="preserve" class="cart">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M183.021,112.989c20.769-2.534,36.924-20.244,36.924-41.69c0-23.178-18.859-42.032-42.035-42.032     c-21.053,0-38.484,15.572-41.515,35.791L41.852,53.724l-6.904-40.28H0v15.217h22.116l3.969,23.173l-0.32-0.038L43.95,152.232     h0.383l2.214,9.049c-10.774,1.798-19.021,11.162-19.021,22.44c0,12.562,10.218,22.78,22.777,22.78     c12.559,0,22.777-10.218,22.777-22.78c0-2.653-0.479-5.189-1.316-7.558h69.512c-0.837,2.371-1.319,4.908-1.319,7.558     c0,12.562,10.218,22.78,22.78,22.78c12.557,0,22.775-10.218,22.775-22.78c0-12.559-10.218-22.775-22.775-22.775H62.126     l-2.13-8.714h114.012L183.021,112.989z M162.744,176.163c4.165,0,7.558,3.391,7.558,7.558c0,4.172-3.393,7.563-7.558,7.563     c-4.172,0-7.563-3.393-7.563-7.563C155.181,179.552,158.574,176.163,162.744,176.163z M177.911,44.487     c14.786,0,26.818,12.029,26.818,26.815s-12.032,26.815-26.818,26.815s-26.813-12.029-26.813-26.815     S163.125,44.487,177.911,44.487z M50.308,191.284c-4.169,0-7.56-3.393-7.56-7.563c0-4.169,3.391-7.558,7.56-7.558     s7.56,3.391,7.56,7.558C57.868,187.893,54.477,191.284,50.308,191.284z M161.89,137.012H56.661v0.003l-10.056-55.55     l-2.072-12.093l92.378,11.076c3.447,15.458,15.425,27.695,30.721,31.56L161.89,137.012z"/>
+                                                    <polygon points="170.302,89.007 185.519,89.007 185.519,79.334 195.197,79.334 195.197,64.117 185.519,64.117 185.519,54.439      170.302,54.439 170.302,64.117 160.627,64.117 160.627,79.334 170.302,79.334    "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                        </svg>
+                                    </div>  
+                            </button>
+                        </div>
+                    </div>
+                  </div> 
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                    <img src="images/shop-imgs/pr8.jpg" alt="" class="product-img">
+                    <div class="item-description">
+                        <h6 class="product-title">Dark Jeans</h6>
+                        <div class="price-buy">
+                            <p class="product-price">300€</p>
+                            <button onclick="addCartClicked(event)" class="product-btn">
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 219.945 219.945" style="enable-background:new 0 0 219.945 219.945;" xml:space="preserve" class="cart">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M183.021,112.989c20.769-2.534,36.924-20.244,36.924-41.69c0-23.178-18.859-42.032-42.035-42.032     c-21.053,0-38.484,15.572-41.515,35.791L41.852,53.724l-6.904-40.28H0v15.217h22.116l3.969,23.173l-0.32-0.038L43.95,152.232     h0.383l2.214,9.049c-10.774,1.798-19.021,11.162-19.021,22.44c0,12.562,10.218,22.78,22.777,22.78     c12.559,0,22.777-10.218,22.777-22.78c0-2.653-0.479-5.189-1.316-7.558h69.512c-0.837,2.371-1.319,4.908-1.319,7.558     c0,12.562,10.218,22.78,22.78,22.78c12.557,0,22.775-10.218,22.775-22.78c0-12.559-10.218-22.775-22.775-22.775H62.126     l-2.13-8.714h114.012L183.021,112.989z M162.744,176.163c4.165,0,7.558,3.391,7.558,7.558c0,4.172-3.393,7.563-7.558,7.563     c-4.172,0-7.563-3.393-7.563-7.563C155.181,179.552,158.574,176.163,162.744,176.163z M177.911,44.487     c14.786,0,26.818,12.029,26.818,26.815s-12.032,26.815-26.818,26.815s-26.813-12.029-26.813-26.815     S163.125,44.487,177.911,44.487z M50.308,191.284c-4.169,0-7.56-3.393-7.56-7.563c0-4.169,3.391-7.558,7.56-7.558     s7.56,3.391,7.56,7.558C57.868,187.893,54.477,191.284,50.308,191.284z M161.89,137.012H56.661v0.003l-10.056-55.55     l-2.072-12.093l92.378,11.076c3.447,15.458,15.425,27.695,30.721,31.56L161.89,137.012z"/>
+                                                    <polygon points="170.302,89.007 185.519,89.007 185.519,79.334 195.197,79.334 195.197,64.117 185.519,64.117 185.519,54.439      170.302,54.439 170.302,64.117 160.627,64.117 160.627,79.334 170.302,79.334    "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                        </svg>
+                                    </div>  
+                            </button>
+                        </div>
+                    </div>
+                  </div> 
+              </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div>
+        <button class="btn"><a href="shop.html">View All</a></button>
+    </section>
+
+    <section id="banner" class="section-m1 reveal">
+        <h2>Sign up for our newsletter and get a 10% discount</h2>
+        <button class="btn-sub" id="trigger">Subscribe to the newsletter</button>
+    </section>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <form>
+                <p>Subscribe to our mailing list</p>
+                <input type="email" value="" name="email" placeholder="Email address" required>
+                <input type="submit" value="Subscribe" name="subscribe">
+            </form>
+        </div>
+    </div>
+   
+
+    <section id="brands" class="section-m1 section-p1 reveal">
+        <h2>Trending Brands</h2>
+        <div class="brands-logo">
+            <img loading="lazy" src="images/index-imgs/adidas.svg" alt="">
+            <img loading="lazy" src="images/index-imgs/gucci.svg" alt="">
+            <img loading="lazy" src="images/index-imgs/lacoste.svg" alt="">
+            <img loading="lazy" src="images/index-imgs/prada.svg" alt="">
+            <img loading="lazy" src="images/index-imgs/versace.svg" alt="">
+        </div>
+    </section>
+
+    <section id="cta-banner" class="reveal">
+        <div class="container">
+            <div class="description-banner">
+                <h2>Special Offer</h2>
+                <h4>Style is the way to say <span class="underlined-txt">who you are</span> without having to speak</h4>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="img-banner">
+                <img loading="lazy" src="images/index-imgs/banner-img.png">
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img loading="lazy" src="images/index-imgs/logo.png" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Dover Street Market NY 10016, United States</p>
+            <p><strong>Phone: </strong> +1 656-833-7770</p>
+            <p><strong>Working Hours: </strong> 09 : 00 - 20 : 00, Mon - Fri</p>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-pinterest"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>    
+        </div>
+        <div class="copyright">
+            <p>© 2022, Jovanka Karoloska</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

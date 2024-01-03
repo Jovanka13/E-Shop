@@ -1,0 +1,93 @@
+/******************* Contact Page *********************/
+
+#contact {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#contact-banner {
+    background-image: url('images/contact-imgs/contact.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+}
+
+#contact-banner h2, #contact-banner p {
+    color: #fff;
+}
+
+#contact .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .contact-details .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#contact .contact-details .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact .contact-details .row .contact-col {
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+#contact .contact-details .row .contact-col:nth-child(3) {
+    padding-right: 0;
+}
+
+#contact .contact-details .row .contact-col h4 {
+    padding-bottom: 20px;
+}
+
+#form-details .form {
+    padding: 50px 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-details form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-details form input, #form-details form textarea {
+    outline: none;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #785D54;
+}
+
+#form-details form button {
+    background-color: #C10001;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}

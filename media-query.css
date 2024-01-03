@@ -1,0 +1,496 @@
+/* -------------- MEDIA QUERY --------------- */
+@media(max-width: 1330px) {
+
+    #hero {
+        background-position: top 0 right 90%;
+    }
+
+    #banner h2 {
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+
+    #banner .btn-sub {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media(max-width: 1200px) {
+
+    #cta-banner .container {
+        max-width: 600px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #brands .brands-logo img {
+        max-width: 70px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    #cta-banner .container .img-banner img {
+        display: none;
+    }
+}
+
+@media(max-width: 1060px) {
+
+    #feature .f-box {
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #feature .f-box img {
+        width: 50px;
+        height: 100%;
+        max-height: 50px;
+    }
+}
+
+@media(max-width: 975px) {
+
+    #hero h4 {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    #hero p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    #banner {
+        padding: 50px;
+    }
+
+    #banner h2 {
+        padding-bottom: 10px;
+        font-size: 26px;
+    }
+
+    #abour-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #abour-header .about-images {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #abour-header .about-text {
+        width: 100%;
+        margin-top: 100px;
+    } 
+
+    .about-images .about-main-img {
+        border: 5px solid #C10001;
+    }
+
+    #blog .blog-box:nth-child(5) {
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 799px) {
+
+    #hero {
+        padding: 100px;
+        height: 100vh;
+    }
+
+    .btn {
+        font-size: 14px;
+        font-weight: 800px;
+        margin: 10px 0;
+        padding: 5px 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #nav-menu .menu-links {
+        display: none;
+    }
+
+    .menu-links-mobile {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all .5s;
+        line-height: 2;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .menu-links-mobile > .mobile-close-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        
+        cursor: pointer;
+    }
+
+    .mobile-close-btn button {
+        background: #494545;
+        font-size:20px;
+        font-weight:bold;
+        color:#f5f5f5;
+        padding: 6px 10px;
+        text-align: center;
+        border: none;
+        border-radius: 50%;
+    }
+
+    #bar {
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+        padding-left: 20px;
+        color: #C10001;
+    }
+
+    #feature .f-box {
+        width: 300px;
+        padding: 20px 10px;
+        margin: 10px;
+    }
+
+    #feature .f-box h6 {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    #banner {
+        padding: 0 30px;
+    
+    }
+
+    #banner h2 {
+        font-size: 30px;
+    }
+
+    #banner .btn-sub {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #brands .brands-logo img {
+        max-width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    #cta-banner {
+        padding: 50px 30px 00px 30px;
+        margin: 0;
+    }
+
+    #cta-banner .container {
+        text-align: start;
+        margin: 0;
+    }
+
+    #cta-banner .container .description-banner h2 {
+        padding: 20px 0;
+    }
+
+    #cta-banner .container .description-banner h4 {
+        padding: 20px 0;
+    }
+    
+    #cta-banner .container .description-banner {
+        padding: 30px 50px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #cta-banner .container .img-banner {
+        right: -70px;
+    }
+
+    .product-images-box {
+        display: flex;
+        width: 60%;
+    }
+
+    #blog .blog-image {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #blog .blog-text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #abour-header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0;
+        padding: 50px
+    }
+
+    #abour-header .about-images {
+        width: 100%;
+    }
+
+    #abour-header .about-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    #contact .contact-details .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .contact-details .row .contact-col {
+        padding: 0 0 30px 0;
+    }
+
+    #form-details .form {
+        padding: 0px 50px;
+    }
+}
+
+@media(max-width: 790px) {
+    #banner h2 {
+        font-size: 22px;
+    }
+
+    #banner .btn-sub {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #feature .f-box {
+        width: 250px;
+        padding: 20px 10px;
+        margin: 25px;
+    }
+
+    #brands .brands-logo img {
+        max-width: 60px;
+        height: 60px;
+        margin: 20px;
+    }
+}
+
+@media(max-width: 630px) {
+
+    #hero {
+        padding: 50px;
+        background-position: top 0 right 50%;
+    }
+
+    #hero h4 {
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+
+    #hero h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    #hero p {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+
+    #brands .brands-logo img {
+        max-width: 40px;
+        height: 40px;
+        margin: 15px;
+    }
+
+    #banner h2 {
+        font-size: 16px;
+    }
+
+    #banner .btn-sub {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    #blog .blog-box {
+        flex-direction: column;
+        display: flex;
+        padding-bottom: 40px;
+    }
+
+    #blog .blog-image {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #blog .blog-text {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .modal-content {
+        padding: 20px;
+        width: 400px;
+    }
+}
+
+@media(max-width: 477px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #header {
+        padding: 10px 20px;
+    }
+    
+    #hero {
+        padding: 0 30px;
+        background-position: 40%;
+    }
+
+    #feature {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #feature .f-box {
+        padding: 20px;
+        margin: 22px;
+    } 
+
+    #feature .f-box img {
+        width: 100px;
+        height: 100px;
+        padding-bottom: 10px;
+    }
+
+    #feature .f-box h6 {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #banner h2 {
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 20px;
+    }
+
+    #cta-banner .container .img-banner img {
+        display: none;
+    }
+
+    #blog {
+        padding: 50px 30px 0 30px;
+    }
+
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        border-top: 1px dotted #C10001;
+        border-bottom: 1px dotted #C10001;
+    }
+
+    #blog .blog-image {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 100%;
+    }
+
+    #blog .blog-text {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #abour-header {
+        padding: 50px 30px 50px 30px;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    #abour-header .about-images {
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .about-images .about-second-img {
+        bottom: -85px;
+        left: 75px;
+        height: 120px;
+        max-width: 170px;
+    }
+
+    .about-text h1 {
+        padding-top: 50px;
+    }
+
+    .modal-content {
+        padding: 10px;
+        width: 360px;
+    }
+}
+
+@media(max-width: 375px) {
+
+    #hero {
+        margin-bottom: 50px;
+        background-position: top 0 right 50%;
+    }
+
+    #hero h1 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #feature {
+        padding: 0;
+    }
+
+    #banner h2 {
+        font-size: 13px;
+        line-height: 18px;
+        padding-bottom: 12px;
+    }
+}
